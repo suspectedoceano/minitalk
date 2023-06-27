@@ -52,7 +52,7 @@ void	ft_putnbr(int n)
 			ft_putstr("-2147483648", 1);
 		n = -n;
 	}
-	else if (n < 10)
+ if (n < 10)
 	{
 		c = n + 48;
 		write(STDOUT_FILENO, &c, 1);
